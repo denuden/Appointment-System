@@ -1,0 +1,171 @@
+main {
+  margin: 120px auto 0px;
+}
+
+.holder {
+  margin: 20px 0px 10px 20px;
+  background-color: #f2f6f8;
+  width: 90%;
+  border-radius: 50px;
+  text-align: center;
+  padding: 15px 8px;
+}
+
+.holder p {
+  line-height: 26px;
+  white-space: wrap;
+}
+
+.holder h3 {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+.holder h4 {
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.holder h5 {
+  font-size: 16px;
+  color: #79C9FF;
+}
+
+.holder a {
+  padding: 5px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #111;
+}
+
+.holder a:hover {
+  background-color: #f1f1f1;
+}
+
+.holder span {
+  color: red;
+}
+
+.img-frame {
+  display: flex;
+  justify-content: center;
+}
+
+.img-frame img {
+  margin: 10px;
+  height: 275px;
+  width: 275px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* for images */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+form button, input {
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+form button {
+  padding: 3px;
+  margin: 8px;
+  width: 120px;
+  background-color: #dcdcdc;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+form button:hover {
+  background-color: #fff;
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    margin: 10px auto 20px;
+    display: flex;
+  }
+
+  .desktop-holder {
+    width: 60%;
+  }
+
+  .holder {
+    width: 90%;
+  }
+
+  .holder h3 {
+    font-size: 20px;
+  }
+
+  .holder p {
+    font-size: 16px;
+  }
+
+  .holder h5 {
+    font-size: 18px;
+  }
+
+  .img-frame img {
+    height: 295px;
+    width: 295px;
+  }
+}
+
+/* 1440px */
+@media only screen and (min-width: 1440px) {
+  .holder h3 {
+    font-size: 24px;
+  }
+
+  .holder p {
+    font-size: 18px;
+  }
+
+  .holder h4 {
+    font-size: 16px;
+  }
+
+  .holder h5 {
+    font-size: 20px;
+  }
+
+  .img-frame img {
+    height: 320px;
+    width: 320px;
+  }
+}
+
+/* 1920px */
+@media only screen and (min-width: 1920px) {
+  .holder h3 {
+    font-size: 28px;
+  }
+
+  .holder p {
+    font-size: 20px;
+  }
+
+  .holder h4 {
+    font-size: 18px;
+  }
+
+  .holder h5 {
+    font-size: 23px;
+  }
+
+  .img-frame img {
+    height: 440px;
+    width: 440px;
+  }
+}

@@ -1,0 +1,117 @@
+.container {
+  margin-top: 110px;
+  width: 100%;
+}
+
+.container h1 {
+  font-size: 26px;
+  font-weight: 800;
+  margin: 10px 0px 14px 5px;
+  color: #79C9FF;
+}
+
+.card {
+  margin: 20px auto;
+  background-color: #fcfcfc;
+  -webkit-box-shadow: 5px 2px 5px 2px rgba(209, 209, 209, 1);
+  -moz-box-shadow: 5px 2px 5px 2px rgba(209, 209, 209, 1);
+  box-shadow: 5px 2px 5px 2px rgba(209, 209, 209, 1);
+  width: 90%;
+  padding: 6px 12px;
+  line-height: 30px;
+}
+
+.card h3 {
+  color: #79C9FF;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.card h4 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.card p {
+  position: relative;
+  top: -20px;
+  left: 100%;
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  opacity: 0;
+}
+
+.card h5 {
+  margin-top: 3px;
+  font-weight: 600;
+  font-size: 14px;
+  text-indent: 30px;
+}
+
+.card h1 {
+  font-size: 18px;
+  color: black;
+  text-decoration: underline;
+}
+
+.card h6 {
+  font-weight: 300;
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+.message {
+  width: 80%;
+  margin: 5px auto;
+  opacity: 0;
+}
+
+.message h2 {
+  font-size: 16px;
+}
+
+/*1024px  */
+@media only screen and (min-width: 1024px) {
+  .container {
+    margin: 20px auto;
+  }
+
+  .container h1 {
+    margin: 3px 0px 14px 22px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+}
+
+/*1600px  */
+@media only screen and (min-width: 1600px) {
+  .card h3 {
+    font-size: 26px;
+  }
+
+  .card h4 {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .card h5 {
+    margin-top: 3px;
+    font-weight: 600;
+    font-size: 16px;
+    text-indent: 30px;
+  }
+
+  .card h6 {
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 12px;
+  }
+}

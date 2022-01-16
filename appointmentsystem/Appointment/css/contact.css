@@ -1,0 +1,51 @@
+.section {
+  width: 80%;
+  margin: 120px auto 0px auto;
+}
+
+.section h2 {
+  color: #79C9FF;
+  padding: 20px;
+}
+
+.body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.email, .tele, .mobi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  height: 300px;
+  text-align: center;
+  padding: 10px;
+}
+
+.email img, .tele img, .mobi img {
+  width: 200px;
+  height: 190px;
+  padding-bottom: 12px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .section {
+    margin: 40px auto 0px auto;
+  }
+
+  .body {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .body {
+    flex-direction: row;
+  }
+}

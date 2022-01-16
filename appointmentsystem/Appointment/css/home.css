@@ -1,0 +1,833 @@
+/* Main */
+main {
+  background-color: #627480;
+  width: 100%;
+  padding: 20px 10px;
+  margin-top: 100px;
+}
+
+main h1 {
+  color: #C4E8FF;
+  padding-bottom: 10px;
+  font-size: 38px;
+}
+
+main p {
+  line-height: 22px;
+  text-align: justify;
+  color: #fff;
+  text-indent: 50px;
+  font-weight: 200;
+  font-style: italic;
+}
+
+main span {
+  font-style: normal;
+  font-weight: 300;
+}
+
+/* section infor */
+.section {
+  margin-bottom: 15px;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+.img-section, .section-overlay {
+  display: none;
+  /* mobile version */
+}
+
+.card-section {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 90%;
+  margin: 10px auto 25px auto;
+  padding: 10px;
+  box-shadow: 4px 4px 8px 1px rgba(173, 173, 173, 1);
+}
+
+.card-width {
+  width: 90%;
+  margin: 10px auto;
+}
+
+.card-section .header {
+  text-align: center;
+  font-size: 16px;
+  color: #79C9FF;
+}
+
+.card-section .body {
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.card-section .body p#span {
+  text-align: center;
+}
+
+/* icon informations */
+.section-icon {
+  width: 100%;
+  margin: 10px;
+}
+
+.section-icon-holder {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-icon {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+  padding: 3px;
+}
+
+.card-icon img {
+  height: 120px;
+  width: 120px;
+}
+
+.card-icon #img {
+  height: 120px;
+  width: 90px;
+}
+
+.card-icon h3 {
+  color: #79C9FF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.card-icon p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #111;
+  opacity: 0.7;
+}
+
+/* Doctor Fields Section */
+.doctor-fields {
+  background-color: #fff;
+}
+
+.doctor-fields h2 {
+  color: #79C9FF;
+  font-size: 30px;
+  padding: 15px 0 0 10px;
+}
+
+.card {
+  padding: 15px 10px 0px 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.card img {
+  height: 160px;
+  width: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card a {
+  color: #3C6480;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-left: 10px;
+}
+
+.card-info h4 {
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+
+.card-info p {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+#short-line {
+  margin: 15px auto;
+  width: 25%;
+}
+
+/* Schedule  */
+.schedule {
+  margin: 20px 0 0 24px;
+}
+
+.schedule h2 {
+  color: #79C9FF;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.schedule button {
+  cursor: pointer;
+  margin-top: 6px;
+  border-style: none;
+  border-radius: 20px;
+  padding: 5px 55px 5px 10px;
+  background-color: #f1f1f1;
+  background-image: url("../images/arrowhead.png");
+  background-position: right center;
+  background-size: 45px;
+  background-repeat: no-repeat;
+  outline: none;
+  transition: all 0.2s ease;
+  -webkit-box-shadow: 0px 0px 1px 1px rgba(60, 100, 128, 1);
+  -moz-box-shadow: 0px 0px 1px 1px rgba(60, 100, 128, 1);
+  box-shadow: 0px 0px 1px 1px rgba(60, 100, 128, 1);
+}
+
+.schedule button:active {
+  background-color: #eae7e7;
+}
+
+.schedule ul {
+  margin-top: 4px;
+  margin-left: 20px;
+  background-color: #f6f9fb;
+  width: 280px;
+  padding: 10px;
+}
+
+.schedule ul li {
+  line-height: 23px;
+  list-style: none;
+  padding: 2px;
+  border-bottom: 1px solid #dcdcdc;
+  cursor: pointer;
+}
+
+.schedule ul.f-drop {
+  display: none;
+}
+
+.schedule ul.drop {
+  display: none;
+  width: 248px;
+}
+
+.schedule ul.drop li:hover {
+  background-color: #C4E8FF;
+}
+
+#red {
+  color: red;
+}
+
+/*  modal */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.3s ease-in-out;
+  border-radius: 20px;
+  padding: 10px;
+  z-index: 100;
+  background-color: #fff;
+  width: 70%;
+  -webkit-box-shadow: 0px 0px 32px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 32px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 32px 3px rgba(0, 0, 0, 0.75);
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.modal-header {
+  font-weight: 500;
+}
+
+.modal-header .exit {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+.modal-body ul li {
+  list-style: none;
+  padding: 2px;
+  transition: all 0.2s ease-in-out;
+}
+
+.modal-body ul li:hover {
+  background-color: #C4E8FF;
+}
+
+#overlay {
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* Get appointment button */
+.getAppointmentBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  background-color: #627480;
+  height: 140px;
+  position: relative;
+}
+
+.getAppointmentBtn button {
+  cursor: pointer;
+  color: #79C9FF;
+  font-size: 18px;
+  background-color: #fff;
+  outline: none;
+  border: none;
+  height: 32px;
+  font-weight: 600;
+  -webkit-box-shadow: 0px 0px 1px 2px #3C6480;
+  -moz-box-shadow: 0px 0px 1px 2px #3C6480;
+  box-shadow: 0px 0px 1px 2px #3C6480;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+.getAppointmentBtn button:active {
+  background-color: #eae7e7;
+}
+
+/* hidden for desktop */
+.desktop-short-line, .desktop-sched {
+  display: none;
+}
+
+/* 768px */
+@media only screen and (min-width: 768px) {
+
+  /* section infor */
+  .section {
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  .card-holder {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-section {
+    box-shadow: 4px 4px 8px 1px rgba(173, 173, 173, 0);
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    height: 350px;
+  }
+
+  .card-section .body {
+    line-height: normal;
+  }
+
+  .img-section, .section-overlay {
+    display: block;
+    /* mobile version */
+  }
+
+  .img-section {
+    width: 100%;
+    height: 430px;
+    position: relative;
+  }
+
+  .img-section img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .section-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+  }
+
+  /* icon informations */
+  .section-icon-holder {
+    flex-direction: row;
+    align-items: baseline;
+    width: 90%;
+    margin: 0px auto;
+  }
+
+  .card-icon {
+    width: 30%;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 3px;
+  }
+
+  .card-icon img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .card-icon #img {
+    height: 100px;
+    width: 70px;
+  }
+
+  .card-icon h3 {
+    color: #79C9FF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+
+  .card-icon p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #111;
+    opacity: 0.7;
+  }
+}
+
+/* 1024px */
+@media only screen and (min-width: 1024px) {
+  .schedule {
+    display: none;
+  }
+
+  main {
+    margin-top: 0px;
+  }
+
+  main h1 {
+    font-size: 42px;
+    text-indent: 30px;
+  }
+
+  main p {
+    font-weight: 300;
+    width: 80%;
+    margin: 0px auto;
+  }
+
+  /* section infor */
+  .card-section {
+    width: 25%;
+    margin: 10px 30px;
+  }
+
+  .card-section .body {
+    margin-top: 12px;
+    line-height: 18px;
+  }
+
+  .img-section, .section-overlay {
+    display: block;
+    /* mobile version */
+  }
+
+  .img-section {
+    width: 100%;
+    height: 430px;
+    position: relative;
+  }
+
+  .img-section img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .section-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+  }
+
+  /* icon informations */
+  .section-icon-holder {
+    flex-direction: row;
+    align-items: baseline;
+    width: 90%;
+    margin: 0px auto;
+  }
+
+  .card-icon {
+    width: 30%;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 3px;
+  }
+
+  .card-icon img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .card-icon #img {
+    height: 100px;
+    width: 70px;
+  }
+
+  .card-icon h3 {
+    color: #79C9FF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+
+  .card-icon p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #111;
+    opacity: 0.7;
+  }
+
+  /* Doctor Fields Section */
+  .desktop-short-line {
+    margin: 25px auto;
+    width: 35%;
+    display: block;
+  }
+
+  .holder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .doctor-fields {
+    margin: 0px auto;
+    width: 90%;
+  }
+
+  .doctor-fields h2 {
+    text-align: center;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .card img {
+    height: 180px;
+    width: 180px;
+  }
+
+  .card-info {
+    margin-top: 14px;
+    text-align: center;
+  }
+
+  .card-info h4 {
+    font-size: 18px;
+  }
+
+  .card-info p {
+    font-size: 13px;
+  }
+
+  #short-line {
+    display: none;
+  }
+
+  /* schedule */
+  .desktop-sched {
+    display: block;
+  }
+
+  .desktop-header {
+    color: #79C9FF;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0px 0px 60px;
+  }
+
+  .desktop-body {
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    padding: 20px 5px;
+  }
+
+  .desktop-col1, .desktop-col2, .desktop-col3 {
+    height: 100%;
+    border-right: 1px solid #dcdcdc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 26px;
+    transition: all 0.3s ease-in-out;
+    margin: 0px auto;
+  }
+
+  .desktop-col1 h3, .desktop-col2 h4 {
+    cursor: pointer;
+    background: linear-gradient(to right, #79C9FF 50%, #111 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    font-style: underline;
+    font-size: 14px;
+  }
+
+  .desktop-col1 {
+    width: 20%;
+  }
+
+  .desktop-col2 {
+    width: 20%;
+  }
+
+  .desktop-col3 {
+    width: 60%;
+  }
+
+  .col3-header, .col3-body {
+    width: 100%;
+  }
+
+  .col3-header ul, .col3-body ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .col3-header ul li, .col3-body ul li {
+    list-style: none;
+    width: 80px;
+  }
+
+  .col3-header ul {
+    font-size: 18px;
+    font-weight: 600;
+    justify-content: space-around;
+  }
+
+  .col3-body ul {
+    margin-top: 5px;
+    justify-content: space-around;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+/* 1440px */
+@media only screen and (min-width: 1440px) {
+
+  /* section infor */
+  .card-section {
+    height: 300px;
+  }
+
+  .card-section .header {
+    font-size: 18px;
+  }
+
+  .card-section .body {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .img-section {
+    width: 100%;
+    height: 430px;
+    position: relative;
+  }
+
+  .card-icon img {
+    height: 120px;
+    width: 120px;
+  }
+
+  .card-icon #img {
+    height: 120px;
+    width: 90px;
+  }
+
+  .card-icon h3 {
+    color: #79C9FF;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+
+  .card-icon p {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  main h1 {
+    font-size: 46px;
+  }
+
+  main p {
+    font-size: 16px;
+  }
+
+  /* Doctor Fields Section */
+  .doctor-fields h2 {
+    font-size: 36px;
+  }
+
+  .card-info h4 {
+    font-size: 22px;
+  }
+
+  .card-info p {
+    font-size: 16px;
+  }
+
+  /* schedule */
+  .desktop-header {
+    font-size: 22px;
+  }
+
+  .desktop-body {
+    height: 200px;
+  }
+
+  .desktop-col1 h3, .desktop-col2 h4 {
+    font-size: 16px;
+  }
+
+  .col3-header ul li, .col3-body ul li {
+    width: 100px;
+  }
+
+  .col3-header ul {
+    font-size: 20px;
+  }
+
+  .col3-body ul {
+    font-size: 14px;
+  }
+
+  /* Get appointment button */
+  .getAppointmentBtn button {
+    font-size: 21px;
+    height: 36px;
+    padding: 0 12px;
+  }
+}
+
+/* 1920px */
+@media only screen and (min-width: 1920px) {
+  main h1 {
+    font-size: 52px;
+  }
+
+  main p {
+    font-size: 18px;
+  }
+
+  /* Doctor Fields Section */
+  .doctor-fields h2 {
+    margin-top: 5px;
+    font-size: 40px;
+  }
+
+  .card-info h4 {
+    font-size: 26px;
+  }
+
+  .card-info p {
+    font-size: 17px;
+  }
+
+  /* schedule */
+  .desktop-header {
+    font-size: 25px;
+  }
+
+  .desktop-col1 h3, .desktop-col2 h4 {
+    font-size: 18px;
+  }
+
+  .col3-header ul li, .col3-body ul li {
+    width: 180px;
+  }
+
+  .col3-header ul {
+    font-size: 22px;
+  }
+
+  .col3-body ul {
+    font-size: 16px;
+  }
+
+  /* Get appointment button */
+  .getAppointmentBtn button {
+    font-size: 26px;
+  }
+}

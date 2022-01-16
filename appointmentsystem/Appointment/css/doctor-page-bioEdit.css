@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+html, body, p, h1, h2, h3, h4, h5, h6, button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* header */
+header {
+  height: 100px;
+  background-color: #F6F9FB;
+  display: flex;
+  width: 100%;
+  z-index: 1000;
+}
+
+header .logo-box {
+  margin-left: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  white-space: wrap;
+  order: 2;
+  padding: 0;
+}
+
+header .logo-box img {
+  height: 70%;
+}
+
+header .logo-box h1 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-left: 3px;
+}
+
+.img-frame {
+  display: flex;
+  justify-content: center;
+}
+
+.img-frame img {
+  mrgin: 10px;
+  height: 275px;
+  width: 275px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+form button {
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 3px;
+  margin: 8px;
+  width: 120px;
+  background-color: #dcdcdc;
+  text-transform: uppercase;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.custom-file-input {
+  cursor: pointer;
+}
+
+.container {
+  margin: 10px 10px;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+form input, textarea, a {
+  border: none;
+  background-color: #e6e6e6;
+  padding: 7px;
+  font-size: 16px;
+  margin: 5px;
+  width: 300px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in;
+  resize: none;
+}
+
+#submit {
+  cursor: pointer;
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+  background-color: #eb4141;
+  color: #121212;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+form h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #79C9FF;
+}
+
+form h1 {
+  font-size: 20px;
+  color: #eb4141;
+  display: none;
+  transition: all 0.3s ease-in;
+}
+
+/* for changing password page */
+#error {
+  color: #eb4141;
+  font-size: 20px;
+  transition: all 0.3s ease-in;
+  opacity: 0;
+}
+
+/* login to continue modal */
+#overlay {
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.3s ease-in-out;
+  border-radius: 20px;
+  padding: 10px;
+  z-index: 100;
+  background-color: #fff;
+  width: 70%;
+  -webkit-box-shadow: 0px 0px 32px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 32px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 32px 3px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal h2 {
+  color: #eb4141;
+  margin-top: 12px;
+  font-size: 20px;
+}
+
+.modal a {
+  margin-top: 22px;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+.modal a:hover {
+  background-color: #f1f1f1;
+}
+
+/* 1024px */
+@media only screen and (min-width: 1024px) {
+  .container {
+    margin: 10px 10px;
+  }
+
+  form input, textarea, a {
+    font-size: 18px;
+    width: 400px;
+  }
+
+  .desktop-holder {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  form h2 {
+    margin: 30px 0px 10px -200px;
+    color: #79C9FF;
+  }
+
+  form h3 {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  form h1 {
+    font-size: 24px;
+  }
+}
+
+/* 1440px */
+@media only screen and (min-width: 1440px) {
+  form input, textarea, a {
+    font-size: 20px;
+    width: 500px;
+  }
+
+  form h3 {
+    font-size: 22px;
+  }
+
+  form h1 {
+    font-size: 24px;
+  }
+}
+
+/* 1920px */
+@media only screen and (min-width: 1920px) {
+  form input, textarea, a {
+    font-size: 22px;
+    width: 500px;
+  }
+
+  form h3 {
+    font-size: 26px;
+  }
+
+  form h1 {
+    font-size: 26px;
+  }
+}
