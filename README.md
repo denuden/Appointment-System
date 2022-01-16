@@ -1,7 +1,7 @@
 # Appointment-System
 A small project i created. An appointment system for the doctors and patients
 
-@Copyrights 2020 Github Profile -> [denuden](url) https://github.com/denuden
+@Copyrights 2020 Github Profile -> [denuden](https://github.com/denuden) 
 
 ***************** WEB-BASED APPPOINTMENT SYSTEM INSTRUCTIONS******************
 PHP Version 7.4.3 
