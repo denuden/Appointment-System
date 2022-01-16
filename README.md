@@ -4,15 +4,19 @@ A small project i created. An appointment system for the doctors and patients
 @Copyrights 2020 Github Profile -> [denuden](https://github.com/denuden) 
 
 ***************** WEB-BASED APPPOINTMENT SYSTEM INSTRUCTIONS******************
+
 PHP Version 7.4.3 
+
 local server used : XAMPP
 
-				!PLEASE READ INSTRUCTIONS ON DOCTORS SIGNIN IN!		
+PLEASE READ INSTRUCTIONS ON DOCTORS SIGNIN IN		
 				
 *******************************
--- create a database named "appointment_db" in phpMyAdmin
--- then import the file "appointment_db.sql" to run the database
--- save the folder named "Appointment" inside htdocs folder of your XAMPP
+-- create a database named "appointment_db" in phpMyAdmin 
+
+-- then import the file "appointment_db.sql" to run the database 
+
+-- save the folder named "Appointment" inside htdocs folder of your XAMPP 
 *****************
 --The database has pre-data given especially the doctors table since doctors data cannot be changed on the website itself for
 	security purposes
@@ -43,7 +47,8 @@ local server used : XAMPP
 		Dr. Jessica Smith
 		Dr. Danilo Garcia
 		Dr. Ramil Torres
-
+		
+*********************************************************************
 -- The Information that is also pre-given to the doctors are "Lorem Ipsum" because i do not know what to include
 -- But, they can edit their information afterwards
 
