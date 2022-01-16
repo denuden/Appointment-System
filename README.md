@@ -38,15 +38,25 @@ PLEASE READ INSTRUCTIONS ON DOCTORS SIGNIN IN
 		password: torres
 
 	-- The list of doctor are as follows:
+	
 		Dr. Janella Reyes
+		
 		Dr. Jasmine Santos
+		
 		Dr. Rowena Reyes
+		
 		Dr. Maricar Cruz
+		
 		Dr. Christian Ocampo
+		
 		Dr. Gabriel Santos
+		
 		Dr. Jessica Smith
+		
 		Dr. Danilo Garcia
+		
 		Dr. Ramil Torres
+		
 		
 *********************************************************************
 -- The Information that is also pre-given to the doctors are "Lorem Ipsum" because i do not know what to include
